@@ -1,5 +1,7 @@
-<?php 
+<!-- Aqui se encontram a funçoes de controle de produtos-->
 
+<?php 
+ 
  function listaProdutos($conexao)
  {
  	$produtos = array();

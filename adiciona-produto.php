@@ -6,8 +6,11 @@ include("banco-produto.php"); ?>
 
 $nome = $_GET["nome"];
 $preco = $_GET["preco"];    
+?>
 
-  
+<!-- Chamada da função de insercao de produto-->
+
+<?php  
 if (insereProduto($conexao, $nome, $preco)) { ?> 
    <!-- Mensagem de sucesso -->
    <p class="alert-success">Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso!</p>
