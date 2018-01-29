@@ -2,7 +2,7 @@
  include("conecta.php");
  include("banco-produto.php"); ?>
 
-<!-- Forma usadas as classes do bootstrap "table-striped"(mesclar as cores das linhas) "table-bordered"(colocar borda na tabela)
+<!-- Forma usadas as classes do bootstrap "table-striped"(mesclar as cores das linhas) "table-bordered"(colocar borda na tabela)-->
 <table class="table table-striped table-bordered">
 
 	<?php 
