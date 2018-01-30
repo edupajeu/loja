@@ -21,4 +21,9 @@ function insereProduto($conexao, $nome, $preco) {
         return $resultadoDaInsercao;
 }
 
+function deletaProduto($conexao, $id) {
+		$query ="delete from produtos where id = {$id}";
+		return mysqli_query($conexao,$query);
+}
+
 ?>   
