@@ -1,17 +1,21 @@
 <?php include("cabecalho.php"); 
 include("conecta.php"); 
-include("banco-produto.php"); ?>
+include("banco-produto.php"); 
+include("banco-categoria")
+?>
 
 <?php    
 
-$nome = $_GET["nome"];
-$preco = $_GET["preco"];    
+$nome = $_POST["nome"];
+$preco = $_POST["preco"];
+$descricao = $_POST["descricao"];
+$categoria_id = $_POST["categoria_id"];      
 ?>
 
 <!-- Chamada da função de insercao de produto-->
 
 <?php  
-if (insereProduto($conexao, $nome, $preco)) { ?> 
+if (insereProduto($conexao, $nome, $preco, $descricao, $categoria_id)) { ?> 
    <!-- Mensagem de sucesso -->
    <p class="alert-success">Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso!</p>
 

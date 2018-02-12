@@ -3,7 +3,7 @@ include("conecta.php");
 include("banco-produto.php"); ?>
 
 <?php
-$id = $_GET['id'];
+$id = $_POST['id'];
 deletaProduto ($conexao, $id);
 
 
